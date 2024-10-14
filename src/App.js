@@ -1,14 +1,17 @@
-import './App.css';
-import Task from './Task';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
+import Tasks from "./components/Tasks";
 
 function App() {
-  let id = 0;
   return (
     <>
-      <h1> Hello todo World</h1>
-      <Task id={id++} />
-      <Task id={id++} />
-      <Task id={id++} />
+      <div className="app">
+        <Header />
+        <Tasks />
+        <Footer />
+      </div>
     </>
   );
 }
